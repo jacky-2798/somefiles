@@ -31,6 +31,7 @@ noremap <LEADER><CR> :nohlsearch<CR>
 set wildmenu
 set magic
 set smartindent
+set scrolloff=6
 
 map s <nop>
 map S :w<CR>
@@ -47,6 +48,7 @@ noremap E 5j
 call plug#begin('~/.vim/plugged')
 
 Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'connorholyday/vim-snazzy'
 
 call plug#end()
@@ -56,4 +58,6 @@ colorscheme snazzy
 let g:SnazzyTransparent = 1
 "===
 
-
+" === airline-themes
+let g:airline_theme='luna'
+" ===
